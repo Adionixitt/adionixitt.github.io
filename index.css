@@ -102,12 +102,12 @@ html::before, html::after, body::before, body::after {
 
 html::before{
 	height: 4rem;
-	top: 2rem; left: 15rem;
+	top: 2rem; left: 35%;
 	transform: rotate(45deg);
 }
 html::after{
 	height: 2rem;
-	bottom: 2rem; left: -25rem;
+	bottom: 5rem; left: -50%;
 	transform: rotate(70deg);
 }
 body::before{
@@ -134,12 +134,14 @@ body::after{
 
 h1{
 	color: var(--primary);
+    text-align: center;
 }
 h1 > b {
 	font-weight: 800;
 }
 p{
 	color: var(--muted-foreground);
+    text-align: center;
 }
 p > i {
 	text-decoration: underline;
@@ -174,7 +176,7 @@ p > i {
 
 #lang-btn {
 	position: fixed;
-	top: 1rem; right: 2rem;
+	top: 1rem; right: 1rem;
 }
 
 .socials-container {
@@ -184,4 +186,25 @@ p > i {
 	flex-direction: row;
 	gap: 1rem;
 	margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100dvw; height: 100dvh;
+        padding: 2rem;
+    }
+    .avatar_container {
+        width: 8rem; height: 8rem;
+    }
+    .socials-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        width: 100%;
+    }
+    .socials-container .btn{
+        width: 100%;
+    }
 }
