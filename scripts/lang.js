@@ -1,4 +1,5 @@
-let lang = navigator.language.split('-')[0] || navigator.userLanguage;
+// let lang = navigator.language || navigator.userLanguage;
+let lang = "en";
 let langBtn = document.querySelector('#lang-btn');
 
 let langDict = {
