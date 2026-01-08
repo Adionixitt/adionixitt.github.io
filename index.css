@@ -75,6 +75,20 @@ main{
     grid-template-rows: repeat(8, 1fr);
     gap: 1rem;
 }
+main > *{
+    animation: pop-in 0.5s ease both;
+    animation-delay: calc(sibling-index() * 500ms);
+}
+@keyframes pop-in{
+    0%{
+        transform: scale(0) translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
 
 .material-symbols-rounded {
   font-variation-settings:
@@ -531,5 +545,15 @@ img{
 
     .map-wrapper{
         aspect-ratio: 16/10;
+    }
+
+    @keyframes pop-in{
+        0% {
+            transform: none;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
