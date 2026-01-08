@@ -13,6 +13,7 @@
     --help-text-color: #8E8E8E;
     --disabled-text-color: #C6C6C6;
     --shadow-color: #1e1e1e06;
+    --intense-shadow-color: rgba(30, 30, 30, 0.096);
     --yellow: #FFCC00;
 }
 
@@ -202,9 +203,10 @@ a.section-link:hover::after{ margin-left: 0.7rem; transition: margin-left 0.2s l
 .tooltip{
     all: inherit;
     display: inline;
-    text-decoration: underline dotted 2px var(--disabled-text-color);
+    text-decoration: underline dotted var(--disabled-text-color);
     text-underline-offset: 5px;
     text-decoration-skip-ink: none;
+    text-decoration-thickness: 2px;
     cursor: pointer;
     transition: text-decoration-color 0.3s ease-in;
     position: relative;
@@ -226,6 +228,7 @@ a.section-link:hover::after{ margin-left: 0.7rem; transition: margin-left 0.2s l
     padding: 1rem;
     border-radius: 2rem;
     corner-shape: squircle;
+    text-wrap-style: balance;
     z-index: 9999999;
     cursor: default;
     visibility: hidden;
@@ -271,7 +274,8 @@ a.section-link:hover::after{ margin-left: 0.7rem; transition: margin-left 0.2s l
     content: 'info';
     display: flex;
     height: 100%;
-    padding: 0.5rem;
+    align-self: flex-start;
+    padding: 0.2rem; padding-right: 0.5rem;
     font-size: 1.25rem;
     color: var(--disabled-text-color);
 }
@@ -504,19 +508,21 @@ img{
         position: fixed;
         display: inline-flex;
         align-items: center;
-        border-radius: 0;
-        top: 0; left: 50%;
-        transform: translateX(-50%) translateY(-100%) scale(0);
+        top: 0; left: 0;
+        transform: translateX(0) translateY(-100%) scale(0);
         width: 100%;
+        width: stretch;
+        margin: 1.5rem;
         height: fit-content;
+        box-shadow: 0 5px 15px 2px var(--intense-shadow-color);
     }
 
     .tooltip:hover > .tooltip-content{
         position: fixed;
-        top: 0; left: 50%;
+        top: 0; left: 0;
         visibility: visible;
         opacity: 1;
-        transform: translateY(0) translateX(-50%);
+        transform: translateY(0) translateX(0);
         transition-delay: 0.2s;
         transition: visibility 0.2s ease-out, opacity 0.2s ease-out, transform 0.2s ease-out;
     }
