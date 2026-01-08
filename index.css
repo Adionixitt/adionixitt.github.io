@@ -110,6 +110,7 @@ section{
     background-color: var(--background);
     border: 1px solid var(--border-color);
     border-radius: 1.5rem;
+    corner-shape: squircle;
     padding: 1.5rem;
     box-shadow: 0 5px 15px 1px var(--shadow-color);
 }
@@ -223,7 +224,8 @@ a.section-link:hover::after{ margin-left: 0.7rem; transition: margin-left 0.2s l
     background-color: var(--background);
     border: 1px solid var(--border-color);
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    corner-shape: squircle;
     z-index: 9999999;
     cursor: default;
     visibility: hidden;
@@ -278,7 +280,8 @@ a.section-link:hover::after{ margin-left: 0.7rem; transition: margin-left 0.2s l
     all: unset;
     background-color: var(--background);
     border: 1px solid var(--border-color);
-    border-radius: 1rem;
+    border-radius: 2rem;
+    corner-shape: squircle;
 }
 .btn:not(:disabled){
     cursor: pointer;
@@ -334,7 +337,8 @@ img{
 .hero .photos-container .img-wrapper{
     aspect-ratio: 1 / 1;
     width: 110px; height: 110px;
-    border-radius: 25px; overflow: hidden;
+    border-radius: 3rem; overflow: hidden;
+    corner-shape: squircle;
     border: var(--background) 3px solid;
 }
 .hero .photos-container .img-wrapper:not(:first-child){ margin-left: -10px; }
@@ -368,7 +372,8 @@ img{
     top: 0; left: 0;
     transform: translate(-50%, -50%);
     width: 50px; height: 50px;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    corner-shape: squircle;
     font-size: 1.5rem;
     display: flex;
     justify-content: center; align-items: center;
@@ -384,7 +389,8 @@ img{
     max-height: 100%;
     width: auto;
     aspect-ratio: 1/1;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    corner-shape: squircle;
     overflow: hidden;
     background-color: var(--border-color);
 }
