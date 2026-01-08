@@ -432,7 +432,7 @@ img{
     bottom: 0; left: 0;
     width: 100px; height: 20px;
     background: repeating-linear-gradient(45deg, var(--heading-color) 0px, var(--heading-color) 20px, var(--yellow) 20px, var(--yellow) 40px);
-    transform: translate(-15%, -25%) rotate(30deg);
+    transform: translate(-15%, -5%) rotate(30deg);
 }
 .coming-soon::before{
     content: '';
@@ -451,7 +451,7 @@ img{
     RESPONSIVE STYLES
 
 */
-@media (max-width: 960px) {
+@media (max-width: 768px) {
     body{ height: auto; }
     main{
         display: flex;
@@ -497,6 +497,7 @@ img{
     .tooltip > .tooltip-content{
         position: fixed;
         display: inline-flex;
+        align-items: center;
         border-radius: 0;
         top: 0; left: 50%;
         transform: translateX(-50%) translateY(-100%) scale(0);
@@ -517,7 +518,6 @@ img{
     .tooltip > .tooltip-content::after{ content: none; }
 
     .map-wrapper{
-        aspect-ratio: 16/9;
+        aspect-ratio: 16/10;
     }
-
 }
