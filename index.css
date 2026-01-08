@@ -72,7 +72,7 @@ main{
     width: 720px; height: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    gap: 15px;
+    gap: 1rem;
 }
 
 .material-symbols-rounded {
@@ -86,7 +86,7 @@ main{
 }
 
 
-.heading{ color: var(--heading-color); font-size: 16px; }
+.heading{ color: var(--heading-color); font-size: 1rem; }
 .subheading{ color: var(--subheading-color); }
 
 .split{
@@ -94,14 +94,14 @@ main{
     flex-direction: row;
     justify-content: space-between;
     height: 100%; width: 100%;
-    gap: 25px;
+    gap: 1.5rem;
 }
 .split span.separator{
     display: inline-block;
     align-self: center;
     height: 50%;
     width: 1px;
-    margin: 10px 0;
+    margin: 0.5rem 0;
     background-color: var(--border-color);
 }
 
@@ -109,8 +109,8 @@ main{
 section{
     background-color: var(--background);
     border: 1px solid var(--border-color);
-    border-radius: 25px;
-    padding: 25px;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
     box-shadow: 0 5px 15px 1px var(--shadow-color);
 }
 section[aria-disabled="true"] .heading{
@@ -121,28 +121,28 @@ section[aria-disabled="true"] p{
 }
 
 section .heading{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     display: inline-flex;
     align-items: center;
 }
 section p{
-    font-size: 14px;
+    font-size: 0.9rem;
     color: var(--text-color);
     letter-spacing: 0;
     text-wrap-style: pretty;
     word-wrap: break-word;
 }
 section p:not(:first-child){
-    margin-top: 5px;
+    margin-top: 0.4rem;
 }
 
 a.section-link{
     display: inline-flex;
     justify-content: end;
     width: 100%;
-    font-size: 12px;
-    padding: 15px;
+    font-size: 0.7rem;
+    padding: 1rem;
     padding-right: 0;
     text-decoration: none;
     color: var(--help-text-color);
@@ -152,7 +152,7 @@ a.section-link::after{
     font-family: 'Material Symbols Rounded';
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
@@ -165,17 +165,17 @@ a.section-link::after{
     
     font-family: 'Material Symbols Rounded';
     content: "arrow_forward";
-    margin-left: 5px;
+    margin-left: 0.5rem;
     transition: margin-left 0.2s linear;
 }
 a.section-link:hover{ color: var(--text-color); transition: color 0.2s linear; }
-a.section-link:hover::after{ margin-left: 10px; transition: margin-left 0.2s linear; }
+a.section-link:hover::after{ margin-left: 0.7rem; transition: margin-left 0.2s linear; }
 
 
 .badge{
     display: inline-flex;
     align-items: center;
-    padding: 7px 12px;
+    padding: 0.5rem 0.8rem;
     font-size: 12px;
     color: var(--help-text-color);
     background-color: var(--background);
@@ -188,8 +188,8 @@ a.section-link:hover::after{ margin-left: 10px; transition: margin-left 0.2s lin
 }
 .version-badge{
     position: fixed;
-    bottom: 25px; right: 25px;
-    border-radius: 999px;
+    bottom: 1.5rem; right: 1.5rem;
+    border-radius: 999rem;
     box-shadow: 0 5px 15px 1px var(--shadow-color);
 }
 .version-badge pre{
@@ -218,11 +218,11 @@ a.section-link:hover::after{ margin-left: 10px; transition: margin-left 0.2s lin
     transform: translateX(-50%) scale(0) translateY(100%);
     width: 450px;
     height: auto;
-    font-size: 14px;
+    font-size: 0.9rem;
     background-color: var(--background);
     border: 1px solid var(--border-color);
-    padding: 15px;
-    border-radius: 15px;
+    padding: 1rem;
+    border-radius: 1rem;
     z-index: 9999999;
     cursor: default;
     visibility: hidden;
@@ -254,7 +254,7 @@ a.section-link:hover::after{ margin-left: 10px; transition: margin-left 0.2s lin
     font-family: 'Material Symbols Rounded';
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
@@ -268,8 +268,8 @@ a.section-link:hover::after{ margin-left: 10px; transition: margin-left 0.2s lin
     content: 'info';
     display: flex;
     height: 100%;
-    padding: 5px;
-    font-size: 20px;
+    padding: 0.5rem;
+    font-size: 1.25rem;
     color: var(--disabled-text-color);
 }
 
@@ -277,7 +277,7 @@ a.section-link:hover::after{ margin-left: 10px; transition: margin-left 0.2s lin
     all: unset;
     background-color: var(--background);
     border: 1px solid var(--border-color);
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 .btn:not(:disabled){
     cursor: pointer;
@@ -309,7 +309,7 @@ img{
     display: flex;
     flex-direction: column; justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.6rem;
 }
 
 .hero p.subheader{
@@ -317,7 +317,7 @@ img{
 }
 .hero .nickname{
     display: inline-block;
-    font-size: 96px;
+    font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
     /* Поправляем внутренние вертикальные отступы из-за шрифта (убираем cap у шрифта) */
@@ -367,8 +367,8 @@ img{
     top: 0; left: 0;
     transform: translate(-50%, -50%);
     width: 50px; height: 50px;
-    border-radius: 15px;
-    font-size: 20px;
+    border-radius: 1rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center; align-items: center;
 
@@ -383,7 +383,7 @@ img{
     max-height: 100%;
     width: auto;
     aspect-ratio: 1/1;
-    border-radius: 15px;
+    border-radius: 1rem;
     overflow: hidden;
     background-color: var(--border-color);
 }
@@ -408,7 +408,7 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
+    gap: 1rem;
 }
 
 /*
@@ -441,4 +441,45 @@ img{
     width: 135px; height: 20px;
     background: repeating-linear-gradient(45deg, var(--heading-color) 0px, var(--heading-color) 20px, var(--yellow) 20px, var(--yellow) 40px);
     transform: translate(35%, -65%) rotate(-60deg);
+}
+
+
+
+/*
+
+    RESPONSIVE STYLES
+
+*/
+@media (max-width: 960px) {
+    body{ height: auto; }
+    main{
+        display: flex;
+        width: 85vw;
+        height: 100%;
+        padding-bottom: 25px;
+        flex-direction: column;
+    }
+    section, .split{ flex-direction: column; }
+    .split{ gap: 0; }
+    .separator{ display: none; }
+    .version-badge{ /*top: 25px; right: 25px; bottom: unset;*/ display: none; }
+
+    .hero{
+        padding: 25px;
+        width: 100%;
+    }
+    .hero .subheading{ font-size: 0.75rem; }
+    .hero .nickname{ font-size: 3.5rem; }
+    .hero .photos-container{
+        width: 100%;
+        justify-content: center;
+        transform: translateY(-25%);
+    }
+    .hero .photos-container .img-wrapper{ width: 80px; height: 80px; }
+
+    .contacts-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
