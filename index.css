@@ -546,4 +546,14 @@ img{
     .map-wrapper{
         aspect-ratio: 16/10;
     }
+
+    @keyframes pop-in{
+        0% {
+            transform: none;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
